@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::table('payments', function (Blueprint $table) {
             $table->date('due_date')->nullable();
-            $table->string('status')->default('pending');
 
         });
     }
