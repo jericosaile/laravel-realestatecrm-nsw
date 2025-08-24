@@ -44,3 +44,50 @@ Follow these steps to set up the project locally.
 ```bash
 git clone https://github.com/jericosaile/laravel-realestatecrm-nsw.git
 cd laravel-realestatecrm-nsw
+```
+
+## 2. Install PHP Dependencies
+
+
+```bash
+composer install
+```
+
+## 3. Copy the example .env file
+
+
+```bash
+cp .env.example .env
+```
+
+## 4. Open .env and update your database credentials
+
+
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_db_user
+DB_PASSWORD=your_db_password
+```
+
+## 5. Generate Application Key
+
+
+```bash
+php artisan key:generate
+```
+
+## 6. Run Database Migrations
+
+
+```bash
+php artisan migrate
+```
+
+## 7. Serve the Application
+
+
+```bash
+php artisan serve
